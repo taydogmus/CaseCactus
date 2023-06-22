@@ -11,6 +11,8 @@ namespace Tuna
         private void Awake()
         {
             Instance = this;
+
+            Application.targetFrameRate = 60;
         }
     }
 }

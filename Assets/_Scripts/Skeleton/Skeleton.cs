@@ -57,6 +57,7 @@ namespace Tuna
                         {
                             if (Time.time > lastTimeShooted + attackInterval)
                             {
+                                print("Throw");
                                 animator.SetTrigger("isAttacking");
                                 lastTimeShooted = Time.time;
                                 ChangeState(EnemyState.Attacking);
